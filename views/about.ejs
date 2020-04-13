@@ -1,0 +1,265 @@
+<!--
+=========================================================
+* * Black Dashboard - v1.0.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/black-dashboard
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128970407-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128970407-3');
+</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="./v.ico">
+  <meta name="description" content="바이러스 퓨처 는 바이러스 예측 사이트 입니다.">
+<meta name="author" content="DipokalHHJ">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="바이러스 퓨처">
+<meta property="og:description" content="바이러스 퓨처 는 바이러스 예측 사이트 입니다.">
+
+<meta name="keywords" content="코로나바이러스, 예측, 우한, 코로나바이러스 지도">
+<meta name="description" content="바이러스 퓨처 는 바이러스 예측 사이트 입니다. 현재 바이러스 현황을 알아보세요.">
+<meta name="author" content="DipokalHHJ">
+<meta name="url" content="https://devent.kr">
+<meta name="identifier-URL" content="https://devent.kr">
+<meta name="summary" content="코로나바이러스, 우한 폐렴">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="바이러스 퓨처">
+<meta property="og:description" content="바이러스 퓨처 는 바이러스 예측 사이트 입니다. 현재 바이러스 현황을 알아보세요.">
+
+<meta http-equiv="Subject" content="바이러스 예측">
+<meta name="og:email" content="hhj@devent.kr"/>
+<meta name="designer" content="DipokalHHJ">
+  <title>
+    바이러스 퓨처 - 소개
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="./assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+    -->
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li >
+            <a href="/">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>보드</p>
+            </a>
+          </li>
+          <li class="active ">
+            <a href="about">
+              <i class="tim-icons icon-atom"></i>
+              <p>소개</p>
+            </a>
+          </li>
+          <li>
+            <a href="record">
+              <i class="tim-icons icon-pin"></i>
+              <p>기록</p>
+            </a>
+          </li>
+          <li>
+            <a href="research">
+              <i class="tim-icons icon-bell-55"></i>
+              <p>개인 연구</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Virus Future</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="dropdown nav-item">
+                <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="notification d-none d-lg-block d-xl-block"></div>
+                  <i class="tim-icons icon-sound-wave"></i>
+                  <p class="d-lg-none">
+                    Notifications
+                  </p>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
+                  <li class="nav-link"><a href="#" class="nav-item dropdown-item">사이트 업그레이드 및 디자인 변경 | 2020-02-26</a></li>
+
+                </ul>
+              </li>
+              <li class="separator d-lg-none"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <div class="row">
+                  <div class="col-sm-6 text-left">
+                    <h2 class="card-title">사이트 소개</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>통계자료를 기반으로 앞으로 예상되는 감염자 수를 예측합니다.
+유바이러스 의 서브 페이지 입니다.
+
+세미콜론(SemiColon)
+SIR 모델 기반으로 감염자 수를 예측합니다.
+
+코로나 바이러스의 통계를 알아보고 예측하는 프로젝트 입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h3 class="card-title">개발자 소개</h3>
+              </div>
+              <div class="card-body">
+                <p class="lead">이 프로젝트에 대한 피드백은 hhj@devent.kr , <a href="https://devent.kr/">DeVent 커뮤니티</a>로 주세요! </p>
+                <p class="lead">유바이러스와는 다른서버에서 운영되고 있습니다. 세미콜론과 연계하여 개발된 프로젝트 입니다.</p>
+                <p class="lead">2005년생, 웹프로그래밍을 즐겨하는 허형준 입니다! 세미콜론의 운영진으로 활동중입니다. 이 외로 면역학, 물리학, 데이터 마이닝, 영상편집 등에 관심이 있습니다 <a href="https://www.notion.so/Dipokal-2d2f57b649ef462a92ea6fbab88eeda7">Notion</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h3 class="card-title">데이터</h3>
+              </div>
+              <div class="card-body">
+                <p class="lead animated fadeIn delay-2s">데이터수집은 <a href="http://www.cdc.go.kr/linkCheck.es?mid=a21111050500">KCDC</a>, <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak">위키피디아</a>, <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia">중국집계데이터</a>, <a href="http://www.xn--now-po7lf48dlsm0ya109f.kr/infect/occurrence_list.do">해외감염병now</a>, <a href="https://www.bloomberg.com/graphics/2020-wuhan-novel-coronavirus-outbreak/">블룸버그</a>, <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Operations Dashboard for ArcGIS</a> 를 기반으로 이루어 집니다. </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <section id="contact">
+
+            <div class="card card-chart">
+              <div class="card-header">
+  <h3 class="card-title">면책 조항</h3>
+</div>
+              <div class="card-body">
+                <h1></h1>
+<p>
+  <h3><%=__('title')%>는 정확성을 보증하지 않습니다.</h3>
+  <%=__('title')%>는 지난 바이러스의 세부적인 자료를 이용함과 동시에 현재 바이러스의 분포, 감염자 수를 예측하는 서비스를 제공합니다.
+  전문가들이 공개하지 않는 예상 감염자 수를 빅데이터를 활용하여 대중의 궁금증을 해소하고자 만들어 졌습니다.
+  다만 정확하고 또는 신뢰할 수 있는 정보를 제공한다고 볼 수는 없습니다.
+  그렇기 때문에 정보를 올리기 전에 수집된 자료가 신빙성있는지를 신중하게 검토하기 위해 노력을 기울이고 있습니다.
+  <%=__('title')%>는 사이트의 정보가 항상 최신이거나, 정확하거나 혹은 완전하다고 보장하지 않습니다. <br>
+  <%=__('title')%>의 수집데이터는 <a href="http://www.cdc.go.kr/linkCheck.es?mid=a21111050500">KCDC(최근 데이터)</a>, <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak">위키피디아(이전 기록 데이터 참고)</a> 자료를 이용하며
+  부가적으로 https://www.bloomberg.com/graphics/2020-wuhan-novel-coronavirus-outbreak/ 자료도 이용합니다. <br>
+  <br>
+  <h3>저작권, 라이선스</h3>
+  <%=__('title')%> 는 이 웹사이트의 페이지에 수록된 또는 링크된 정보를 여러분이 사용하는 것에 어떠한 책임도 지지 않습니다. <%=__('title')%> 가 제공하는 정보는 누구나 자유롭게 활용하실수 있습니다.
+  <br><br>
+  <h3>확실한 정보가 아닙니다.</h3>
+  <%=__('title')%>는 오차를 줄여나가고 있지만 절대적으로 신뢰하지는 마시길 바랍니다.
+
+
+</p>
+              </div>
+            </div>
+          </section>
+
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="javascript:void(0)" target="_blank">Creative Tim</a> HTML 테마 이용
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <!-- Chart JS -->
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="./assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+
+</body>
+
+</html>

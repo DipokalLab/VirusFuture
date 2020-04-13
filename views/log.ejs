@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128970407-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128970407-3');
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="v.ico">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="vlioo 는 바이러스 예측 사이트 입니다.">
+  <meta name="author" content="DipokalHHJ">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vlioo">
+  <meta property="og:description" content="vlioo 는 바이러스 예측 사이트 입니다.">
+
+  <meta name="keywords" content="코로나바이러스, 예측, 우한, 코로나바이러스 지도">
+  <meta name="description" content="vlioo 는 바이러스 예측 사이트 입니다. 현재 바이러스 현황을 알아보세요.">
+  <meta name="author" content="DipokalHHJ">
+  <meta name="url" content="https://devent.kr">
+  <meta name="identifier-URL" content="https://devent.kr">
+  <meta name="summary" content="코로나바이러스, 우한 폐렴">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vlioo">
+  <meta property="og:description" content="vlioo 는 바이러스 예측 사이트 입니다. 현재 바이러스 현황을 알아보세요.">
+
+  <meta http-equiv="Subject" content="바이러스 예측">
+  <meta name="og:email" content="hhj@devent.kr"/>
+  <meta name="designer" content="DipokalHHJ">
+
+  <title><%=__('title')%> | 기록</title>
+
+  <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="//unpkg.com/bootstrap@4/dist/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<style>
+	header {
+	  padding: 156px 0 100px;
+	}
+
+	section {
+	  padding: 150px 0;
+	}
+
+    .highlights {
+        background: linear-gradient( to left, #ff9966, #ff5e62 );
+      }
+
+		[data-theme="dark"] {
+  background-color: #111 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .text-light {
+  color: #333 !important;
+}
+
+[data-theme="dark"] .text-dark {
+  color: #eee !important;
+}
+
+[data-theme="dark"] .btn-light {
+  color: #333 !important;
+}
+
+[data-theme="dark"] .btn-dark {
+  color: #eee !important;
+}
+
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+.hidden {
+ position:absolute !important;
+ width:1px;
+ height:1px;
+ overflow:hidden;
+ clip:rect(1px 1px 1px 1px); /* IE6, IE7 */
+ clip:rect(1px, 1px, 1px, 1px);}
+	</style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger text-dark" href="/">VirusFuture</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-dark" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-dark" href="record">Record</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-dark" href="research">Research</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="highlights text-white">
+    <div class="container text-center">
+      <h1 class='animated fadeIn delay-1s'><%=__('title')%></h1>
+      <p class="lead animated fadeIn delay-2s"><%=__('c1')%></p>
+		       <div class="custom-control custom-switch animated fadeIn delay-2s">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+
+          <!-- You must load 'dark-mode-switch.js' after the dark-mode switch -->
+    </div>
+  </header>
+
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2><%=__('c1')%></h2>
+          <p class="lead">2020-01-31: 11,856(P.M.) <%=__('b2')%></p>
+          <p class="lead">2020-02-01: 12,766(A.M.) <%=__('b2')%> ==> 14,046(P.M.) <%=__('b2')%></p>
+          <p class="lead">2020-02-02: 17,149(A.M.) <%=__('b2')%></p>
+          <p class="lead">2020-02-03: 20,214(A.M.) <%=__('b2')%></p>
+          <p class="lead">2020-02-04: 23,869(A.M.) <%=__('b2')%></p>
+          <p class="lead">2020-02-05: 28,435(A.M.) <%=__('b2')%></p>
+          <p class="lead">2020-02-06: 31,913(A.M.) <%=__('b2')%></p>
+          <p class="lead">2020-02-07: 33,737(A.M.) <%=__('b2')%></p>
+          <p class="lead">개발중단</p>
+          <p class="lead">2020-02-20: 75,265 <%=__('b2')%></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-light">
+    <div class="container">
+      <p class="m-0 text-center">Vlioo 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='//unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
+<script src='//unpkg.com/bootstrap@4/dist/js/bootstrap.min.js'></script>
+<script src='https://www.jqueryscript.net/demo/dark-mode-bootstrap/dark-mode-switch.min.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Vlioo | Research</title>
+
+  <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="//unpkg.com/bootstrap@4/dist/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<style>
+	header {
+	  padding: 156px 0 100px;
+	}
+
+	section {
+	  padding: 150px 0;
+	}
+
+    .highlights {
+        background: linear-gradient( to left, #ff9966, #ff5e62 );
+      }
+
+		[data-theme="dark"] {
+  background-color: #111 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .text-light {
+  background-color: #333 !important;
+}
+[data-theme="dark"] .text-light {
+    color: #333 !important;
+  }
+
+  [data-theme="dark"] .text-dark {
+    color: #eee !important;
+  }
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+	</style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger text-dark" href="/">VirusFuture</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-dark" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-dark" href="record">Record</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-dark" href="research">Research</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="highlights text-white">
+    <div class="container text-center">
+      <h1 class='animated fadeIn delay-1s'><%=__('title')%></h1>
+      <p class="lead animated fadeIn delay-2s">Research</p>
+		       <div class="custom-control custom-switch animated fadeIn delay-2s">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+
+          <!-- You must load 'dark-mode-switch.js' after the dark-mode switch -->
+    </div>
+  </header>
+
+
+  <section id="research1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8 mx-auto">
+          <h4>이 연구자료는 공식 연구자료가 아닙니다. 참고는 하시되 너무 신뢰하시거나 불안감을 가지시지는 마시길 바랍니다.</h4>
+<hr>
+          <h2>Research #1</h2>
+          <p>최초 작성일: 2020-02-03 | 최종 수정일: 2020-02-04</p>
+          <p class="lead">자체 개발된 기존 예측 알고리즘은 당장 내일만 예측할 수 있습니다. 저는 이 예측 알고리즘을 SIR 모델을 바탕으로 더 미래의 상황도 예측해보고 싶었습니다. 2020-02-02에 17205 명이 감염되었고 362명이 사망하였습니다. 감염자 중 489명이 회복되었습니다. 이 SIR 모델을 활용하기 위해 걸릴 수 있는 사람(S), 감염된 사람(I), 회복된 사람(R)을 알아야 합니다. 저희는 현재 걸릴 수 있는 사람의 정밀한 수치를 모르기 때문에 국내 감염자(15) 중 접촉자(913) 명의 비(1:60) 즉 1명당 60명 정도 접촉한 셈입니다. 결과적으로 걸릴 수 있는 사람(S) 는 전체 감염자 17205명 X 60 = 1032300‬ 명으로 계산하였습니다. </p>
+          <img src="img/Figure_2.png" alt="" width="700" class="img-fluid">
+          <p>2020-02-03: 약 2만명 입니다. 이 수치는 기존 알고리즘과 200명 정도 오차를 보입니다. 또한 실제 데이터와 400명 정도의 오차가 있습니다.</p>
+          <img src="img/Figure_3.png" alt="" width="700" class="img-fluid">
+          <p>2020-02-06: 약 3만명 정도로 예측했습니다.</p>
+          <img src="img/Figure_4.png" alt="" width="700" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-light">
+    <div class="container">
+      <p class="m-0 text-center">Vlioo 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='//unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
+<script src='//unpkg.com/bootstrap@4/dist/js/bootstrap.min.js'></script>
+
+<script src='https://www.jqueryscript.net/demo/dark-mode-bootstrap/dark-mode-switch.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7'></script>
+
+
+
+</body>
+
+</html>
