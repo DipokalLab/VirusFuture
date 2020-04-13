@@ -4,18 +4,15 @@ var app = express();
 var server = http.createServer(app);
 var fs = require('fs');
 var cookieParser = require('cookie-parser');
+var i18n = require('i18n');
+var helmet = require('helmet');
+
 app.set('view engine','ejs');
 app.set('views','./views');
-app.use(express.static('pub'));
-app.use('/uploads', express.static('uploads'));
-var i18n = require('i18n');
-//const io = require('socket.io')(server);
 app.enable('trust proxy');
-var client = require('cheerio-httpcli');
-var helmet = require('helmet');
+app.use(express.static('pub'));
 app.use(helmet());
 app.use(cookieParser());
-//https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak
 i18n.configure({
   locales: ['ko', 'en'],
   defaultLocale: 'ko',
@@ -113,8 +110,6 @@ function sirKor(i, ck, r0) {
 			Infected.push(Math.floor(Infected[i] + stoi - itor));
 			Resistant.push(Resistant[i] + itor);
 		}
-
-
 	}
 	//console.log(Infected)
 	return Infected;
@@ -125,6 +120,7 @@ app.get('/en',function(req,res){
     res.cookie('lang', 'en');
     res.redirect('back');
 });
+
 app.get('/ko', function(req,res){
     res.cookie('lang', 'ko');
     res.redirect('back');
@@ -208,6 +204,6 @@ app.get('/research', function(req, res) {
 
 
 server.listen(3001, function() {
-  console.log('Vlioo: 0.1.0 >> Server listen on port ' + server.address().port);
-  console.log('Vlioo: Start >> 클루도스 프로젝트에 오신것을 환영합니다.');
+  console.log('vf: 0.1.0 >> Server listen on port ' + server.address().port);
+  console.log('vf: Start >> vf 프로젝트에 오신것을 환영합니다.');
 });
